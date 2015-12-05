@@ -1,0 +1,16 @@
+version = '0.1.0-SNAPSHOT'
+
+
+
+allprojects {
+
+
+	repositories {
+		mavenLocal()
+		mavenCentral()
+	}
+	task wrapper(type: Wrapper) {
+		gradleVersion = '2.3'
+	}
+
+}
