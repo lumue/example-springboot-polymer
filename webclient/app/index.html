@@ -45,27 +45,32 @@
 <body unresolved class="fullbleed layout vertical">
 <span id="browser-sync-binding"></span>
 <template is="dom-bind" id="app">
-  <iron-pages attr-for-selected="data-route" selected="{{route}}">
 
+  <header>
+    <h1>Polymer Demo</h1>
+  </header>
+
+  <aside>
+    <application-menu-component></application-menu-component>
+  </aside>
+
+  <iron-pages attr-for-selected="data-route" selected="{{route}}">
     <section data-route="home">
-      <header>
-        <h1>Polymer Demo</h1>
-      </header>
+
       <main>
         <ul>
           <li>
             <article>
               <h2>
-                cors ajax
+                Hallo Welt!
               </h2>
-              <a href="/cors-ajax-demo">demo</a>
             </article>
           </li>
         </ul>
       </main>
     </section>
 
-    <section data-route="cors-ajax-demo-page">
+    <section data-route="cors-ajax-demo">
       <cors-ajax-demo-page></cors-ajax-demo-page>
     </section>
 
