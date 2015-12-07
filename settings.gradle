@@ -1,4 +1,4 @@
-rootProject.name = 'example-springboot-polymer-cors'
+rootProject.name = 'example-springboot-polymer'
 include (
 	  'springboot-server'
 )

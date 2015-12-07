@@ -1,0 +1,29 @@
+
+
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="cors-ajax-demo-dataprovider">
+  <script>
+  (function() {
+    'use strict';
+
+    Polymer({
+      is: 'cors-ajax-demo-dataprovider',
+
+
+
+      properties: {
+        data: {
+          type: String,
+          notify: true,
+          value: 1
+        }
+      },
+
+      refresh: function(){
+        this.properties.data.value++;
+      }
+    });
+  })();
+  </script>
+</dom-module>
